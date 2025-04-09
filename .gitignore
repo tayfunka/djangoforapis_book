@@ -176,3 +176,4 @@ cython_debug/
 # additional ignores:
 .library_website_venv
 .todo_api
+.DS_Store
