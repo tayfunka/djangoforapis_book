@@ -39,3 +39,8 @@ class UserViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAdminUser]
     queryset = get_user_model().objects.all()
     serializer_class = UserSerializer
+
+
+'''
+Ultimately the decision of when to add viewsets and routers to your project is subjective. A good rule of thumb is to start with views and URLs. As your API grows in complexity if you find yourself repeating the same endpoint patterns over and over again, then look to viewsets and routers. Until then, keep things simple.
+'''
